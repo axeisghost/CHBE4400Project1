@@ -30,7 +30,7 @@ function re = FlowRateChange(t, input)
     T1 = T1ss;
     %-------------------------------------
     re(1,1) = (F1 - F2)./A;
-    re(2,1) = F1.*ro.*C1ss./Vt - F2.*ro.*C2./Vt-k0.*exp(-Ea./R./T2).*ro.*C2;
+    re(2,1) = F1.*C1ss./Vt - F2.*C2./Vt-k0.*exp(-Ea./R./T2).*C2;
     re(3,1) = F1.*T1./Vt - F2.*T2./Vt + UA.*(Tc - T2)./Vt./Cp./ro + Hrx.*k0.*exp(-Ea./R./T2).*C2./Cp; 
     
     

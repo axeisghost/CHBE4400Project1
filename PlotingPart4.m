@@ -1,7 +1,10 @@
-[t1, ans1] = ode45('InputTempChange', [0 3000], [0.7454, 0.1420, 590]);
+[t1, ans1] = ode45('InputTempChange', [0 6000], [0.7454, 0.1420, 590]);
 plot(t1, ans1(:,2),'b');
 title('Part4, C2-plot');
+xlabel('Time(s)');
+ylabel('C2(kg/kg)');
 figure;
 plot(t1, ans1(:,3),'b');
 title('Part4, T2-plot');
-
+xlabel('Time(s)');
+ylabel('T2(C)');
