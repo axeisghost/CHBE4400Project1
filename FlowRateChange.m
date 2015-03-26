@@ -17,11 +17,11 @@ function re = FlowRateChange(t, input)
     UA = 5; %kj/k/s
     Fcmax = 90.; %L/s
     Pc = 9.; %psi
-    C2ss =  C1ss.*0.2;
+   % C2ss =  C1ss.*0.2;
     g= 9.8;% m/s2
     %secondary parameters:
     Cvp = (Pvp - 3)./12.*Cvpm;
-    Fc = (Pc - 3)./12.*Fcmax;
+   % Fc = (Pc - 3)./12.*Fcmax;
     F1 = F1ss .* 1.1;
     F2 = sqrt(input(1).*ro.*g) .* Cvp;
     Vt = input(1) .* A;
